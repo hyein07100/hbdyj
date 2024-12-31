@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from '../pages/main/Main.js';
 import MyLetter from '../pages/letter/MyLetter.js';
 import SelectLetter from "../pages/letterSelect/SelectLetter.js";
+import GumaLetter from "../pages/letter/GumaLetter.js";
+import DongleLetter from "../pages/letter/DongleLetter.js";
 
 const router = createBrowserRouter([
   {
@@ -9,14 +11,21 @@ const router = createBrowserRouter([
     element:<Main/>
   },
   {
+    path:'/selectLetter',
+    element:<SelectLetter />
+  },
+  {
     path:'/myletter',
     element:<MyLetter />
   },
   {
-    path:'/selectLetter',
-    element:<SelectLetter />
+    path:'/gumaletter',
+    element:<GumaLetter />
   },
-
+  {
+    path:'/dongleletter',
+    element:<DongleLetter />
+  }
 ]);
 
 export default router;

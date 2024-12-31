@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import S from './style.js';
 import GlobalStyle from "../global/GlobalStyle.js";
 
-const MyLetter = () => {
+const GumaLetter = () => {
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const correctPassword = 'bears'; 
+  const correctPassword = 'eagles'; 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
@@ -23,11 +23,11 @@ const MyLetter = () => {
     <S.Background>
       <GlobalStyle />
       {isAuthenticated ? (
-        <div>내 편지다</div> 
+        <div>구마 편지다</div> 
       ) : (
         <form onSubmit={handleSubmit}>
           <S.Bigfont>편지를 확인하기 위해서 비밀번호를 입력해줘!</S.Bigfont>
-          <S.Mainfont>hint : 혜인이가 좋아하는 야구단의 구단명 <br/> </S.Mainfont>
+          <S.Mainfont>hint : 수경이가 좋아하는 야구단의 구단명 <br/> </S.Mainfont>
           <S.Subfont>ex) KIA tigers인 경우 tigers</S.Subfont>
           <S.InputContainer>
               <S.input
@@ -44,4 +44,4 @@ const MyLetter = () => {
   );
 };
 
-export default MyLetter;
+export default GumaLetter;
