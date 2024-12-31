@@ -23,10 +23,26 @@ S.Bigfont = styled.div`
   margin-bottom: 10%;
 `
 
+S.BigfontLetter = styled.div`
+  font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: pink;
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 5%;
+`
+
 S.Mainfont = styled.div`
   font-family: 'Ownglyph_ParkDaHyun', sans-serif;
   font-size: 24px;
   text-align: center;
+`
+S.MainfontLetter = styled.div`
+  font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 5%;
 `
 
 S.Subfont = styled.div`

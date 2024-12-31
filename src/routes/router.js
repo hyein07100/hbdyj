@@ -4,6 +4,7 @@ import MyLetter from '../pages/letter/MyLetter.js';
 import SelectLetter from "../pages/letterSelect/SelectLetter.js";
 import GumaLetter from "../pages/letter/GumaLetter.js";
 import DongleLetter from "../pages/letter/DongleLetter.js";
+import Board from "../pages/board/Board.js";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path:'/dongleletter',
     element:<DongleLetter />
+  },
+  {
+    path:'/board',
+    element: <Board/>
   }
 ]);
 

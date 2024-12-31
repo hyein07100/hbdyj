@@ -36,6 +36,7 @@ const SelectLetter = () => {
           </S.ImageWrapper>
         ))}
       </S.ImageContainer>
+      
     </S.Background>
   );
 };
