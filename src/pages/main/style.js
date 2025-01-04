@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const S = {};
 
@@ -8,7 +9,7 @@ S.Background = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto ;
+  margin: 0 auto;
 `;
 
 S.MainFont = styled.div`
@@ -18,7 +19,7 @@ S.MainFont = styled.div`
   color: pink;
   text-align: center;
   margin-top: 3%;
-`
+`;
 
 S.Cafe24Font = styled.div`
   font-family: 'Cafe24Nyangi-W-v1.0', sans-serif; 
@@ -27,8 +28,15 @@ S.Cafe24Font = styled.div`
   margin-top: 10%;
 `;
 
-S.HighlightedText = styled.span`
-color: #BCE55C; 
+S.HighlightedText = styled.span `
+  color:${(props)=> props.color };
+  &:hover {
+    color:#99CCFF; 
+  }
+`;
+
+S.HighlightedLink = styled(NavLink)`
+  text-decoration: none; 
 `;
 
 S.Button = styled.button`
@@ -45,6 +53,6 @@ S.Button = styled.button`
   &:hover {
     background-color: #ff69b4; 
   }
-`
+`;
 
 export default S;
