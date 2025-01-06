@@ -18,7 +18,7 @@ export default function Main() {
     const interval = setInterval(()=>{
       setColor(colors[index]);
       index = (index + 1) % colors.length;
-    }, 300)
+    }, 700)
 
     return()=>clearInterval(interval);
   },[]);
